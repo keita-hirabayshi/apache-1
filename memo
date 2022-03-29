@@ -1,0 +1,9 @@
+# [KeepAlive]
+# HTTPの持続的な接続を有効にする
+# コンテキスト:	サーバ設定ファイル, バーチャルホスト
+KeepAlive On
+MaxKeepAliveRequests 100
+KeepAliveTimeout 1
+# tcp/ip接続に関わってくる項目
+# keepaliveをonにする事で接続時に複数のブラウザからのリクエストを蓮即して処理できるようになる
+# maxkeepaliverequestsは処理対象の数　　keepalivetimeoutは接続の有効時間を示す（多すぎると待機時間が増えて良くない）
